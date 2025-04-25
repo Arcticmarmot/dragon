@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 5
+    },
+    "auditLog": "consensus/data/first/.log_rotate_audit.json",
+    "files": [
+        {
+            "date": 1745571031590,
+            "name": "consensus/data/first/beacon-2025-04-25.log",
+            "hash": "c6ed308f9d1c3bff50b79f8918f8964384d86c385a922dd22a59c7486975d815"
+        }
+    ],
+    "hashType": "sha256"
+}

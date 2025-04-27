@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 5
+    },
+    "auditLog": "consensus/data/bootnode/.log_rotate_audit.json",
+    "files": [
+        {
+            "date": 1745726931479,
+            "name": "consensus/data/bootnode/bootnode-2025-04-27.log",
+            "hash": "c1720768358a6796622425d2a7ad2a9f57efdec62c3cba7de96c7b5f533da32e"
+        }
+    ],
+    "hashType": "sha256"
+}

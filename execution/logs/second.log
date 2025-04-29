@@ -1,0 +1,577 @@
+[32mINFO [0m[04-29|18:21:54.980] Logging configured                       [32mrotate[0m=false [32mformat[0m=terminal [32mlocation[0m=./execution/logs/second.log
+[32mINFO [0m[04-29|18:21:54.985] Maximum peer count                       [32mETH[0m=50 [32mtotal[0m=50
+[32mINFO [0m[04-29|18:21:54.986] Smartcard socket not found, disabling    [32merr[0m="stat /run/pcscd/pcscd.comm: no such file or directory"
+[32mINFO [0m[04-29|18:21:54.986] Using external signer                    [32murl[0m=./execution/clef/clef.ipc
+[32mINFO [0m[04-29|18:21:54.987] Set global gas cap                       [32mcap[0m=50,000,000
+[32mINFO [0m[04-29|18:21:54.987] Initializing the KZG library             [32mbackend[0m=gokzg
+[32mINFO [0m[04-29|18:21:55.006] Allocated trie memory caches             [32mclean[0m=154.00MiB [32mdirty[0m=256.00MiB
+[32mINFO [0m[04-29|18:21:55.006] Using pebble as the backing database
+[32mINFO [0m[04-29|18:21:55.006] Allocated cache and file handles         [32mdatabase[0m=/home/marmot/Projects/dragon/execution/data/second/geth/chaindata [32mcache[0m=512.00MiB [32mhandles[0m=524,288
+[32mINFO [0m[04-29|18:21:55.027] Opened ancient database                  [32mdatabase[0m=/home/marmot/Projects/dragon/execution/data/second/geth/chaindata/ancient/chain [32mreadonly[0m=false
+[32mINFO [0m[04-29|18:21:55.027] State scheme set to already existing     [32mscheme[0m=path
+[32mINFO [0m[04-29|18:21:55.027] Initialising Ethereum protocol           [32mnetwork[0m=2023 [32mdbversion[0m=<nil>
+[32mINFO [0m[04-29|18:21:55.028] Failed to load journal, discard it       [32merr[0m="journal not found"
+[32mINFO [0m[04-29|18:21:55.033] Opened ancient database                  [32mdatabase[0m=/home/marmot/Projects/dragon/execution/data/second/geth/chaindata/ancient/state [32mreadonly[0m=false
+[32mINFO [0m[04-29|18:21:55.033] Initialized path database                [32mcache[0m=154.00MiB [32mbuffer[0m=256.00MiB [32mhistory[0m=90000
+[32mINFO [0m[04-29|18:21:55.033] 
+[32mINFO [0m[04-29|18:21:55.033] ---------------------------------------------------------------------------------------------------------------------------------------------------------
+[32mINFO [0m[04-29|18:21:55.034] Chain ID:  2023 (unknown)
+[32mINFO [0m[04-29|18:21:55.034] Consensus: unknown
+[32mINFO [0m[04-29|18:21:55.034] 
+[32mINFO [0m[04-29|18:21:55.034] Pre-Merge hard forks (block based):
+[32mINFO [0m[04-29|18:21:55.034]  - Homestead:                   #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/homestead.md)
+[32mINFO [0m[04-29|18:21:55.034]  - Tangerine Whistle (EIP 150): #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/tangerine-whistle.md)
+[32mINFO [0m[04-29|18:21:55.034]  - Spurious Dragon/1 (EIP 155): #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md)
+[32mINFO [0m[04-29|18:21:55.034]  - Spurious Dragon/2 (EIP 158): #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/spurious-dragon.md)
+[32mINFO [0m[04-29|18:21:55.034]  - Byzantium:                   #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/byzantium.md)
+[32mINFO [0m[04-29|18:21:55.034]  - Constantinople:              #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/constantinople.md)
+[32mINFO [0m[04-29|18:21:55.034]  - Petersburg:                  #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/petersburg.md)
+[32mINFO [0m[04-29|18:21:55.034]  - Istanbul:                    #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/istanbul.md)
+[32mINFO [0m[04-29|18:21:55.034]  - Muir Glacier:                #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/muir-glacier.md)
+[32mINFO [0m[04-29|18:21:55.034]  - Berlin:                      #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/berlin.md)
+[32mINFO [0m[04-29|18:21:55.034]  - London:                      #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/london.md)
+[32mINFO [0m[04-29|18:21:55.034]  - Arrow Glacier:               #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/arrow-glacier.md)
+[32mINFO [0m[04-29|18:21:55.034]  - Gray Glacier:                #0        (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/gray-glacier.md)
+[32mINFO [0m[04-29|18:21:55.034] 
+[32mINFO [0m[04-29|18:21:55.034] Merge configured:
+[32mINFO [0m[04-29|18:21:55.034]  - Hard-fork specification:    https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/paris.md
+[32mINFO [0m[04-29|18:21:55.034]  - Network known to be merged
+[32mINFO [0m[04-29|18:21:55.034]  - Total terminal difficulty:  0
+[32mINFO [0m[04-29|18:21:55.034] 
+[32mINFO [0m[04-29|18:21:55.034] Post-Merge hard forks (timestamp based):
+[32mINFO [0m[04-29|18:21:55.034]  - Shanghai:                    @1745921888 (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/shanghai.md)
+[32mINFO [0m[04-29|18:21:55.034]  - Cancun:                      @1745921888 (https://github.com/ethereum/execution-specs/blob/master/network-upgrades/mainnet-upgrades/cancun.md)
+[32mINFO [0m[04-29|18:21:55.034]  - Prague:                      @9999999999
+[32mINFO [0m[04-29|18:21:55.034] 
+[32mINFO [0m[04-29|18:21:55.034] ---------------------------------------------------------------------------------------------------------------------------------------------------------
+[32mINFO [0m[04-29|18:21:55.034] 
+[32mINFO [0m[04-29|18:21:55.034] Loaded most recent local block           [32mnumber[0m=0 [32mhash[0m=3728c8..a77c05 [32mage[0m=3m47s
+[33mWARN [0m[04-29|18:21:55.034] Failed to load snapshot                  [33merr[0m="missing or corrupted snapshot"
+[32mINFO [0m[04-29|18:21:55.039] Rebuilding state snapshot
+[32mINFO [0m[04-29|18:21:55.040] Initialized transaction indexer          [32mrange[0m="last 2350000 blocks"
+[33mWARN [0m[04-29|18:21:55.040] Invalid log index database version; resetting log index
+[32mINFO [0m[04-29|18:21:55.040] Resuming state snapshot generation       [32mroot[0m=2a72ab..9ba396 [32maccounts[0m=0 [32mslots[0m=0 [32mstorage[0m=0.00B [32mdangling[0m=0 [32melapsed[0m=1.110ms
+[32mINFO [0m[04-29|18:21:55.042] Generated state snapshot                 [32maccounts[0m=3 [32mslots[0m=31 [32mstorage[0m=3.16KiB [32mdangling[0m=0 [32melapsed[0m=3.305ms
+[32mINFO [0m[04-29|18:21:55.101] Gasprice oracle is ignoring threshold set [32mthreshold[0m=2
+[33mWARN [0m[04-29|18:21:55.102] Engine API enabled                       [33mprotocol[0m=eth
+[32mINFO [0m[04-29|18:21:55.102] Starting peer-to-peer node               [32minstance[0m=Geth/v1.15.10-stable-2bf8a789/linux-amd64/go1.24.2
+[32mINFO [0m[04-29|18:21:55.118] New local node record                    [32mseq[0m=1,745,922,115,117 [32mid[0m=292bf6954c8d7e23 [32mip[0m=127.0.0.1 [32mudp[0m=30304 [32mtcp[0m=30304
+[32mINFO [0m[04-29|18:21:55.119] IPC endpoint opened                      [32murl[0m=/home/marmot/Projects/dragon/execution/data/second/geth.ipc
+[32mINFO [0m[04-29|18:21:55.120] Loaded JWT secret file                   [32mpath[0m=execution/jwtsecret/second [32mcrc32[0m=0x3c1f7cfb
+[32mINFO [0m[04-29|18:21:55.120] HTTP server started                      [32mendpoint[0m=127.0.0.1:8546 [32mauth[0m=false [32mprefix[0m= [32mcors[0m= [32mvhosts[0m=localhost
+[32mINFO [0m[04-29|18:21:55.120] Started P2P networking                   [32mself[0m=enode://b2dfc2f81d3a7af826fae7ad8336be16f8120e64e17acec841504f8fa619c25fa9a3a08d225ac031dae483c3c00e29d5c161bda0deb88c64b7224fd3a4213557@127.0.0.1:30304
+[32mINFO [0m[04-29|18:21:55.120] WebSocket enabled                        [32murl[0m=ws://127.0.0.1:8552
+[32mINFO [0m[04-29|18:21:55.120] HTTP server started                      [32mendpoint[0m=127.0.0.1:8552 [32mauth[0m=true  [32mprefix[0m= [32mcors[0m=localhost [32mvhosts[0m=*
+[33mWARN [0m[04-29|18:21:55.120] Failed to open wallet                    [33murl[0m=extapi://./execution/clef/clef... [33merr[0m="operation not supported on external signers"
+[32mINFO [0m[04-29|18:21:55.120] Started log indexer
+[33mWARN [0m[04-29|18:21:59.622] Served eth_getLogs                       [33mconn[0m=127.0.0.1:43270 [33mreqid[0m=1 [33mduration[0m="106.05µs" [33merr[0m="invalid block range params"
+[32mINFO [0m[04-29|18:22:02.353] Starting work on payload                 [32mid[0m=0x031865f3558639c7
+[32mINFO [0m[04-29|18:22:02.353] Updated payload                          [32mid[0m=0x031865f3558639c7 [32mnumber[0m=1 [32mhash[0m=4459de..73447e [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0 [32mfees[0m=0 [32mroot[0m=2a72ab..9ba396 [32melapsed[0m="89.641µs"
+[32mINFO [0m[04-29|18:22:02.353] Stopping work on payload                 [32mid[0m=0x031865f3558639c7 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:22:02.383] Imported new potential chain segment     [32mnumber[0m=1 [32mhash[0m=4459de..73447e [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.525ms    [32mmgasps[0m=0.000 [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:22:02.383] Ready for fork activation                [32mfork[0m=Prague [32mdate[0m="21 Nov 86 01:46 CST" [32mremaining[0m=2292799h24m37s [32mtimestamp[0m=9,999,999,999
+[32mINFO [0m[04-29|18:22:02.393] Chain head was updated                   [32mnumber[0m=1 [32mhash[0m=4459de..73447e [32mroot[0m=2a72ab..9ba396 [32melapsed[0m=3.502906ms
+[31mERROR[0m[04-29|18:22:02.393] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:22:02.398] Indexed transactions                     [32mblocks[0m=2 [32mtxs[0m=0 [32mtail[0m=0 [32melapsed[0m=5.019ms
+[32mINFO [0m[04-29|18:22:05.295] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:22:08.017] Imported new potential chain segment     [32mnumber[0m=2 [32mhash[0m=6b653f..13639f [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.336ms    [32mmgasps[0m=0.000 [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:22:08.020] Chain head was updated                   [32mnumber[0m=2 [32mhash[0m=6b653f..13639f [32mroot[0m=2a72ab..9ba396 [32melapsed[0m=1.211025ms
+[31mERROR[0m[04-29|18:22:08.020] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:22:15.711] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:22:26.324] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:22:32.030] Imported new potential chain segment     [32mnumber[0m=3 [32mhash[0m=627e96..53f186 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=2.387ms    [32mmgasps[0m=0.000 [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:22:32.034] Chain head was updated                   [32mnumber[0m=3 [32mhash[0m=627e96..53f186 [32mroot[0m=2a72ab..9ba396 [32melapsed[0m=1.279326ms
+[31mERROR[0m[04-29|18:22:32.034] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:22:36.636] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:22:40.002] Starting work on payload                 [32mid[0m=0x0315824c9f6c45b4
+[32mINFO [0m[04-29|18:22:40.002] Updated payload                          [32mid[0m=0x0315824c9f6c45b4 [32mnumber[0m=4 [32mhash[0m=015d6b..01e24d [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0 [32mfees[0m=0 [32mroot[0m=2a72ab..9ba396 [32melapsed[0m="46.36µs"
+[32mINFO [0m[04-29|18:22:44.006] Stopping work on payload                 [32mid[0m=0x0315824c9f6c45b4 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:22:44.014] Imported new potential chain segment     [32mnumber[0m=4 [32mhash[0m=015d6b..01e24d [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.131ms    [32mmgasps[0m=0.000 [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:22:44.016] Chain head was updated                   [32mnumber[0m=4 [32mhash[0m=015d6b..01e24d [32mroot[0m=2a72ab..9ba396 [32melapsed[0m=1.093795ms
+[31mERROR[0m[04-29|18:22:44.017] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:22:47.248] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:22:56.018] Imported new potential chain segment     [32mnumber[0m=5 [32mhash[0m=31ba23..4fdeff [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=2.634ms    [32mmgasps[0m=0.000 [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:22:56.021] Chain head was updated                   [32mnumber[0m=5 [32mhash[0m=31ba23..4fdeff [32mroot[0m=2a72ab..9ba396 [32melapsed[0m=1.229426ms
+[31mERROR[0m[04-29|18:22:56.022] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:22:57.360] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:23:04.001] Starting work on payload                 [32mid[0m=0x034f23bdc9c00175
+[32mINFO [0m[04-29|18:23:04.001] Updated payload                          [32mid[0m=0x034f23bdc9c00175 [32mnumber[0m=6 [32mhash[0m=f81f81..fab160 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0 [32mfees[0m=0 [32mroot[0m=2a72ab..9ba396 [32melapsed[0m="66.05µs"
+[32mINFO [0m[04-29|18:23:07.672] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=1 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:23:08.006] Stopping work on payload                 [32mid[0m=0x034f23bdc9c00175 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:23:08.014] Imported new potential chain segment     [32mnumber[0m=6 [32mhash[0m=f81f81..fab160 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.506ms    [32mmgasps[0m=0.000 [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:23:08.017] Chain head was updated                   [32mnumber[0m=6 [32mhash[0m=f81f81..fab160 [32mroot[0m=2a72ab..9ba396 [32melapsed[0m=1.232616ms
+[31mERROR[0m[04-29|18:23:08.017] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:23:16.001] Starting work on payload                 [32mid[0m=0x0354a2b8a5dbb7c3
+[32mINFO [0m[04-29|18:23:16.001] Updated payload                          [32mid[0m=0x0354a2b8a5dbb7c3 [32mnumber[0m=7 [32mhash[0m=792539..3fb899 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0 [32mfees[0m=0 [32mroot[0m=2a72ab..9ba396 [32melapsed[0m="37.25µs"
+[32mINFO [0m[04-29|18:23:17.888] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:23:20.007] Stopping work on payload                 [32mid[0m=0x0354a2b8a5dbb7c3 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:23:20.015] Imported new potential chain segment     [32mnumber[0m=7 [32mhash[0m=792539..3fb899 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.351ms    [32mmgasps[0m=0.000 [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:23:20.018] Chain head was updated                   [32mnumber[0m=7 [32mhash[0m=792539..3fb899 [32mroot[0m=2a72ab..9ba396 [32melapsed[0m=1.219856ms
+[31mERROR[0m[04-29|18:23:20.019] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:23:28.301] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:23:38.816] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:23:49.129] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:23:56.028] Imported new potential chain segment     [32mnumber[0m=8 [32mhash[0m=142d95..61c325 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=2.716ms    [32mmgasps[0m=0.000 [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:23:56.032] Chain head was updated                   [32mnumber[0m=8 [32mhash[0m=142d95..61c325 [32mroot[0m=2a72ab..9ba396 [32melapsed[0m=1.821754ms
+[31mERROR[0m[04-29|18:23:56.032] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:23:59.743] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:24:08.028] Imported new potential chain segment     [32mnumber[0m=9 [32mhash[0m=d96230..58e57b [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.981ms    [32mmgasps[0m=0.000 [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:24:08.031] Chain head was updated                   [32mnumber[0m=9 [32mhash[0m=d96230..58e57b [32mroot[0m=2a72ab..9ba396 [32melapsed[0m=1.126165ms
+[31mERROR[0m[04-29|18:24:08.031] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:24:09.756] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:24:19.868] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:24:20.023] Imported new potential chain segment     [32mnumber[0m=10 [32mhash[0m=97394d..a30321 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.649ms    [32mmgasps[0m=0.000 [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:24:20.030] Chain head was updated                   [32mnumber[0m=10 [32mhash[0m=97394d..a30321 [32mroot[0m=2a72ab..9ba396 [32melapsed[0m=1.609599ms
+[31mERROR[0m[04-29|18:24:20.030] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:24:30.183] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:24:32.019] Imported new potential chain segment     [32mnumber[0m=11 [32mhash[0m=52ebe0..77df9d [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.353ms    [32mmgasps[0m=0.000 [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:24:32.033] Chain head was updated                   [32mnumber[0m=11 [32mhash[0m=52ebe0..77df9d [32mroot[0m=2a72ab..9ba396 [32melapsed[0m=1.256074ms
+[31mERROR[0m[04-29|18:24:32.033] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:24:40.499] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:24:44.017] Imported new potential chain segment     [32mnumber[0m=12 [32mhash[0m=0d7173..c66233 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.395ms    [32mmgasps[0m=0.000 [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:24:44.020] Chain head was updated                   [32mnumber[0m=12 [32mhash[0m=0d7173..c66233 [32mroot[0m=2a72ab..9ba396 [32melapsed[0m=1.382422ms
+[31mERROR[0m[04-29|18:24:44.020] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:24:50.911] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:25:00.922] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:25:08.018] Imported new potential chain segment     [32mnumber[0m=13 [32mhash[0m=9695fe..76c2b6 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=3.262ms    [32mmgasps[0m=0.000 [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:25:08.018] Ready for fork activation                [32mfork[0m=Prague [32mdate[0m="21 Nov 86 01:46 CST" [32mremaining[0m=2292799h21m31s [32mtimestamp[0m=9,999,999,999
+[32mINFO [0m[04-29|18:25:08.021] Chain head was updated                   [32mnumber[0m=13 [32mhash[0m=9695fe..76c2b6 [32mroot[0m=2a72ab..9ba396 [32melapsed[0m=1.142876ms
+[31mERROR[0m[04-29|18:25:08.021] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:25:11.035] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:25:16.002] Starting work on payload                 [32mid[0m=0x036642b401711f5f
+[32mINFO [0m[04-29|18:25:16.002] Updated payload                          [32mid[0m=0x036642b401711f5f [32mnumber[0m=14 [32mhash[0m=37f46c..f616d1 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0 [32mfees[0m=0 [32mroot[0m=2a72ab..9ba396 [32melapsed[0m="31.59µs"
+[32mINFO [0m[04-29|18:25:20.004] Stopping work on payload                 [32mid[0m=0x036642b401711f5f [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:25:20.012] Imported new potential chain segment     [32mnumber[0m=14 [32mhash[0m=37f46c..f616d1 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.369ms    [32mmgasps[0m=0.000 [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:25:20.015] Chain head was updated                   [32mnumber[0m=14 [32mhash[0m=37f46c..f616d1 [32mroot[0m=2a72ab..9ba396 [32melapsed[0m=1.251585ms
+[31mERROR[0m[04-29|18:25:20.015] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:25:21.148] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:25:28.003] Starting work on payload                 [32mid[0m=0x03bf3c3b46588950
+[32mINFO [0m[04-29|18:25:28.003] Updated payload                          [32mid[0m=0x03bf3c3b46588950 [32mnumber[0m=15 [32mhash[0m=00e50b..2137e5 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0 [32mfees[0m=0 [32mroot[0m=2a72ab..9ba396 [32melapsed[0m="75.009µs"
+[32mINFO [0m[04-29|18:25:31.160] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:25:32.003] Stopping work on payload                 [32mid[0m=0x03bf3c3b46588950 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:25:32.011] Imported new potential chain segment     [32mnumber[0m=15 [32mhash[0m=00e50b..2137e5 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.468ms    [32mmgasps[0m=0.000 [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:25:32.014] Chain head was updated                   [32mnumber[0m=15 [32mhash[0m=00e50b..2137e5 [32mroot[0m=2a72ab..9ba396 [32melapsed[0m=1.67684ms
+[31mERROR[0m[04-29|18:25:32.014] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:25:40.002] Starting work on payload                 [32mid[0m=0x035df157c770fbe2
+[32mINFO [0m[04-29|18:25:40.002] Updated payload                          [32mid[0m=0x035df157c770fbe2 [32mnumber[0m=16 [32mhash[0m=8a1410..18acf1 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0 [32mfees[0m=0 [32mroot[0m=2a72ab..9ba396 [32melapsed[0m="49.779µs"
+[32mINFO [0m[04-29|18:25:41.474] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:25:44.005] Stopping work on payload                 [32mid[0m=0x035df157c770fbe2 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:25:44.013] Imported new potential chain segment     [32mnumber[0m=16 [32mhash[0m=8a1410..18acf1 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.467ms    [32mmgasps[0m=0.000 [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:25:44.016] Chain head was updated                   [32mnumber[0m=16 [32mhash[0m=8a1410..18acf1 [32mroot[0m=2a72ab..9ba396 [32melapsed[0m=1.184056ms
+[31mERROR[0m[04-29|18:25:44.016] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:25:51.588] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:25:52.001] Starting work on payload                 [32mid[0m=0x032716600d90646d
+[32mINFO [0m[04-29|18:25:52.002] Updated payload                          [32mid[0m=0x032716600d90646d [32mnumber[0m=17 [32mhash[0m=646eea..bab589 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0 [32mfees[0m=0 [32mroot[0m=2a72ab..9ba396 [32melapsed[0m="45.37µs"
+[32mINFO [0m[04-29|18:25:56.005] Stopping work on payload                 [32mid[0m=0x032716600d90646d [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:25:56.013] Imported new potential chain segment     [32mnumber[0m=17 [32mhash[0m=646eea..bab589 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.436ms    [32mmgasps[0m=0.000 [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:25:56.016] Chain head was updated                   [32mnumber[0m=17 [32mhash[0m=646eea..bab589 [32mroot[0m=2a72ab..9ba396 [32melapsed[0m=1.168287ms
+[31mERROR[0m[04-29|18:25:56.016] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:26:01.701] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:26:08.019] Imported new potential chain segment     [32mnumber[0m=18 [32mhash[0m=3fa83d..244a00 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=2.260ms    [32mmgasps[0m=0.000 [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:26:08.021] Chain head was updated                   [32mnumber[0m=18 [32mhash[0m=3fa83d..244a00 [32mroot[0m=2a72ab..9ba396 [32melapsed[0m=1.083128ms
+[31mERROR[0m[04-29|18:26:08.022] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:26:11.817] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:26:22.131] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:26:32.244] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:26:42.657] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:26:44.018] Imported new potential chain segment     [32mnumber[0m=19 [32mhash[0m=706981..e6a8ed [32mblocks[0m=1 [32mtxs[0m=1 [32mmgas[0m=0.021 [32melapsed[0m=1.364ms    [32mmgasps[0m=15.388 [32msnapdiffs[0m=134.00B [32mtriediffs[0m=752.00B [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:26:44.021] Chain head was updated                   [32mnumber[0m=19 [32mhash[0m=706981..e6a8ed [32mroot[0m=2d25b0..7b7baf [32melapsed[0m=1.206548ms
+[31mERROR[0m[04-29|18:26:44.021] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:26:53.167] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:26:56.015] Imported new potential chain segment     [32mnumber[0m=20 [32mhash[0m=3114a2..0c9756 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.470ms    [32mmgasps[0m=0.000  [32msnapdiffs[0m=134.00B [32mtriediffs[0m=752.00B [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:26:56.017] Chain head was updated                   [32mnumber[0m=20 [32mhash[0m=3114a2..0c9756 [32mroot[0m=2d25b0..7b7baf [32melapsed[0m=1.184399ms
+[31mERROR[0m[04-29|18:26:56.017] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:27:03.581] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:27:13.796] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:27:16.001] Starting work on payload                 [32mid[0m=0x0369b6fb1f97e41f
+[32mINFO [0m[04-29|18:27:16.002] Updated payload                          [32mid[0m=0x0369b6fb1f97e41f [32mnumber[0m=21 [32mhash[0m=bc7475..a3279a [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0 [32mfees[0m=0 [32mroot[0m=2d25b0..7b7baf [32melapsed[0m="97.149µs"
+[32mINFO [0m[04-29|18:27:20.008] Stopping work on payload                 [32mid[0m=0x0369b6fb1f97e41f [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:27:20.015] Imported new potential chain segment     [32mnumber[0m=21 [32mhash[0m=bc7475..a3279a [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.328ms    [32mmgasps[0m=0.000  [32msnapdiffs[0m=134.00B [32mtriediffs[0m=752.00B [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:27:20.019] Chain head was updated                   [32mnumber[0m=21 [32mhash[0m=bc7475..a3279a [32mroot[0m=2d25b0..7b7baf [32melapsed[0m=1.887463ms
+[31mERROR[0m[04-29|18:27:20.019] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:27:23.907] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:27:34.019] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:27:44.018] Imported new potential chain segment     [32mnumber[0m=22 [32mhash[0m=1ecc41..98e28b [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.470ms    [32mmgasps[0m=0.000  [32msnapdiffs[0m=134.00B [32mtriediffs[0m=752.00B [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:27:44.021] Chain head was updated                   [32mnumber[0m=22 [32mhash[0m=1ecc41..98e28b [32mroot[0m=2d25b0..7b7baf [32melapsed[0m=1.15231ms
+[31mERROR[0m[04-29|18:27:44.021] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:27:44.433] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:27:54.445] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:27:56.014] Imported new potential chain segment     [32mnumber[0m=23 [32mhash[0m=1cbc3a..cfc688 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.930ms    [32mmgasps[0m=0.000  [32msnapdiffs[0m=134.00B [32mtriediffs[0m=752.00B [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:27:56.016] Chain head was updated                   [32mnumber[0m=23 [32mhash[0m=1cbc3a..cfc688 [32mroot[0m=2d25b0..7b7baf [32melapsed[0m=1.11187ms
+[31mERROR[0m[04-29|18:27:56.016] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:28:04.001] Starting work on payload                 [32mid[0m=0x031816aec77fb82e
+[32mINFO [0m[04-29|18:28:04.001] Updated payload                          [32mid[0m=0x031816aec77fb82e [32mnumber[0m=24 [32mhash[0m=43fcd2..cf1825 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0 [32mfees[0m=0 [32mroot[0m=2d25b0..7b7baf [32melapsed[0m="47.43µs"
+[32mINFO [0m[04-29|18:28:04.555] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:28:08.005] Stopping work on payload                 [32mid[0m=0x031816aec77fb82e [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:28:08.013] Imported new potential chain segment     [32mnumber[0m=24 [32mhash[0m=43fcd2..cf1825 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.381ms    [32mmgasps[0m=0.000  [32msnapdiffs[0m=134.00B [32mtriediffs[0m=752.00B [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:28:08.016] Chain head was updated                   [32mnumber[0m=24 [32mhash[0m=43fcd2..cf1825 [32mroot[0m=2d25b0..7b7baf [32melapsed[0m=1.16279ms
+[31mERROR[0m[04-29|18:28:08.016] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:28:14.771] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:28:24.793] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:28:32.021] Imported new potential chain segment     [32mnumber[0m=25 [32mhash[0m=34095c..a09c62 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=4.832ms    [32mmgasps[0m=0.000  [32msnapdiffs[0m=134.00B [32mtriediffs[0m=752.00B [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:28:32.021] Ready for fork activation                [32mfork[0m=Prague [32mdate[0m="21 Nov 86 01:46 CST" [32mremaining[0m=2292799h18m7s  [32mtimestamp[0m=9,999,999,999
+[32mINFO [0m[04-29|18:28:32.030] Chain head was updated                   [32mnumber[0m=25 [32mhash[0m=34095c..a09c62 [32mroot[0m=2d25b0..7b7baf [32melapsed[0m=6.038682ms
+[31mERROR[0m[04-29|18:28:32.030] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:28:35.108] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:28:40.006] Starting work on payload                 [32mid[0m=0x03e43c7781d77880
+[32mINFO [0m[04-29|18:28:40.006] Updated payload                          [32mid[0m=0x03e43c7781d77880 [32mnumber[0m=26 [32mhash[0m=d765da..1e1be6 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0 [32mfees[0m=0 [32mroot[0m=2d25b0..7b7baf [32melapsed[0m="52.419µs"
+[32mINFO [0m[04-29|18:28:44.004] Stopping work on payload                 [32mid[0m=0x03e43c7781d77880 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:28:44.011] Imported new potential chain segment     [32mnumber[0m=26 [32mhash[0m=d765da..1e1be6 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.460ms    [32mmgasps[0m=0.000  [32msnapdiffs[0m=134.00B [32mtriediffs[0m=752.00B [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:28:44.014] Chain head was updated                   [32mnumber[0m=26 [32mhash[0m=d765da..1e1be6 [32mroot[0m=2d25b0..7b7baf [32melapsed[0m=1.14929ms
+[31mERROR[0m[04-29|18:28:44.014] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:28:45.320] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:28:52.001] Starting work on payload                 [32mid[0m=0x030ed98cf6ecb7af
+[32mINFO [0m[04-29|18:28:52.001] Updated payload                          [32mid[0m=0x030ed98cf6ecb7af [32mnumber[0m=27 [32mhash[0m=0aef0e..bd0961 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0 [32mfees[0m=0 [32mroot[0m=2d25b0..7b7baf [32melapsed[0m="57.48µs"
+[32mINFO [0m[04-29|18:28:55.434] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:28:56.004] Stopping work on payload                 [32mid[0m=0x030ed98cf6ecb7af [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:28:56.019] Imported new potential chain segment     [32mnumber[0m=27 [32mhash[0m=0aef0e..bd0961 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.660ms    [32mmgasps[0m=0.000  [32msnapdiffs[0m=134.00B [32mtriediffs[0m=752.00B [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:28:56.022] Chain head was updated                   [32mnumber[0m=27 [32mhash[0m=0aef0e..bd0961 [32mroot[0m=2d25b0..7b7baf [32melapsed[0m=1.260051ms
+[31mERROR[0m[04-29|18:28:56.022] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:29:05.449] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:29:08.019] Imported new potential chain segment     [32mnumber[0m=28 [32mhash[0m=797ef7..e0a532 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=4.303ms    [32mmgasps[0m=0.000  [32msnapdiffs[0m=134.00B [32mtriediffs[0m=752.00B [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:29:08.030] Chain head was updated                   [32mnumber[0m=28 [32mhash[0m=797ef7..e0a532 [32mroot[0m=2d25b0..7b7baf [32melapsed[0m=4.590856ms
+[31mERROR[0m[04-29|18:29:08.030] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:29:15.661] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:29:20.013] Imported new potential chain segment     [32mnumber[0m=29 [32mhash[0m=9c64f2..b6f4b2 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.108ms    [32mmgasps[0m=0.000  [32msnapdiffs[0m=134.00B [32mtriediffs[0m=752.00B [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:29:20.016] Chain head was updated                   [32mnumber[0m=29 [32mhash[0m=9c64f2..b6f4b2 [32mroot[0m=2d25b0..7b7baf [32melapsed[0m=1.066792ms
+[31mERROR[0m[04-29|18:29:20.016] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:29:25.973] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:29:32.015] Imported new potential chain segment     [32mnumber[0m=30 [32mhash[0m=b90726..107433 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.259ms    [32mmgasps[0m=0.000  [32msnapdiffs[0m=134.00B [32mtriediffs[0m=752.00B [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:29:32.019] Chain head was updated                   [32mnumber[0m=30 [32mhash[0m=b90726..107433 [32mroot[0m=2d25b0..7b7baf [32melapsed[0m=1.967286ms
+[31mERROR[0m[04-29|18:29:32.019] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:29:35.987] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:29:40.001] Starting work on payload                 [32mid[0m=0x03f52961d9844f1d
+[32mINFO [0m[04-29|18:29:40.001] Updated payload                          [32mid[0m=0x03f52961d9844f1d [32mnumber[0m=31 [32mhash[0m=5394e6..443083 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0 [32mfees[0m=0 [32mroot[0m=2d25b0..7b7baf [32melapsed[0m="37.84µs"
+[32mINFO [0m[04-29|18:29:44.004] Stopping work on payload                 [32mid[0m=0x03f52961d9844f1d [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:29:44.012] Imported new potential chain segment     [32mnumber[0m=31 [32mhash[0m=5394e6..443083 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.571ms    [32mmgasps[0m=0.000  [32msnapdiffs[0m=134.00B [32mtriediffs[0m=752.00B [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:29:44.015] Chain head was updated                   [32mnumber[0m=31 [32mhash[0m=5394e6..443083 [32mroot[0m=2d25b0..7b7baf [32melapsed[0m=1.183732ms
+[31mERROR[0m[04-29|18:29:44.015] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:29:46.402] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:29:52.002] Starting work on payload                 [32mid[0m=0x035a611552798fd5
+[32mINFO [0m[04-29|18:29:52.002] Updated payload                          [32mid[0m=0x035a611552798fd5 [32mnumber[0m=32 [32mhash[0m=960b92..8cc37e [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0 [32mfees[0m=0 [32mroot[0m=2d25b0..7b7baf [32melapsed[0m="34.61µs"
+[32mINFO [0m[04-29|18:29:56.007] Stopping work on payload                 [32mid[0m=0x035a611552798fd5 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:29:56.015] Imported new potential chain segment     [32mnumber[0m=32 [32mhash[0m=960b92..8cc37e [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=2.270ms    [32mmgasps[0m=0.000  [32msnapdiffs[0m=134.00B [32mtriediffs[0m=752.00B [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:29:56.018] Chain head was updated                   [32mnumber[0m=32 [32mhash[0m=960b92..8cc37e [32mroot[0m=2d25b0..7b7baf [32melapsed[0m=1.632969ms
+[31mERROR[0m[04-29|18:29:56.018] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:29:56.513] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:30:06.628] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:30:16.002] Starting work on payload                 [32mid[0m=0x033f0e3c8847afd2
+[32mINFO [0m[04-29|18:30:16.002] Updated payload                          [32mid[0m=0x033f0e3c8847afd2 [32mnumber[0m=33 [32mhash[0m=ca2c15..5189ab [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0 [32mfees[0m=0 [32mroot[0m=2d25b0..7b7baf [32melapsed[0m="54.38µs"
+[32mINFO [0m[04-29|18:30:16.487] Submitted transaction                    [32mhash[0m=0x496d1e9532c70c20ddf6cca0bd76310e03e9af9bd855f8b9aaaa481be7f3f925 [32mfrom[0m=0xe3884CF5d8fc59367A9702CA08295685E825D4f5 [32mnonce[0m=1 [32mrecipient[0m=0x54db8d1344208f57d60E0B87eA02bB6577Fbddda [32mvalue[0m=1,000,000,000,000,000,000
+[32mINFO [0m[04-29|18:30:17.041] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:30:18.003] Updated payload                          [32mid[0m=0x033f0e3c8847afd2 [32mnumber[0m=33 [32mhash[0m=3b1460..1e1b63 [32mtxs[0m=1 [32mwithdrawals[0m=0 [32mgas[0m=21000 [32mfees[0m=2.1e-08 [32mroot[0m=3e4599..96624c [32melapsed[0m="173.609µs"
+[32mINFO [0m[04-29|18:30:20.004] Stopping work on payload                 [32mid[0m=0x033f0e3c8847afd2 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:30:20.012] Imported new potential chain segment     [32mnumber[0m=33 [32mhash[0m=3b1460..1e1b63 [32mblocks[0m=1 [32mtxs[0m=1 [32mmgas[0m=0.021 [32melapsed[0m=1.565ms     [32mmgasps[0m=13.412 [32msnapdiffs[0m=268.00B [32mtriediffs[0m=1.48KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:30:20.015] Chain head was updated                   [32mnumber[0m=33 [32mhash[0m=3b1460..1e1b63 [32mroot[0m=3e4599..96624c [32melapsed[0m=1.941498ms
+[31mERROR[0m[04-29|18:30:20.015] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:30:27.053] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:30:28.002] Starting work on payload                 [32mid[0m=0x03600d3767e53f07
+[32mINFO [0m[04-29|18:30:28.002] Updated payload                          [32mid[0m=0x03600d3767e53f07 [32mnumber[0m=34 [32mhash[0m=210c09..064478 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=3e4599..96624c [32melapsed[0m="34.01µs"
+[32mINFO [0m[04-29|18:30:32.004] Stopping work on payload                 [32mid[0m=0x03600d3767e53f07 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:30:32.011] Imported new potential chain segment     [32mnumber[0m=34 [32mhash[0m=210c09..064478 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.453ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=268.00B [32mtriediffs[0m=1.48KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:30:32.014] Chain head was updated                   [32mnumber[0m=34 [32mhash[0m=210c09..064478 [32mroot[0m=3e4599..96624c [32melapsed[0m=1.085853ms
+[31mERROR[0m[04-29|18:30:32.014] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:30:37.164] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:30:44.014] Imported new potential chain segment     [32mnumber[0m=35 [32mhash[0m=e48a7c..069654 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.211ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=268.00B [32mtriediffs[0m=1.48KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:30:44.018] Chain head was updated                   [32mnumber[0m=35 [32mhash[0m=e48a7c..069654 [32mroot[0m=3e4599..96624c [32melapsed[0m=1.979248ms
+[31mERROR[0m[04-29|18:30:44.018] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:30:47.276] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:30:57.591] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:31:08.016] Imported new potential chain segment     [32mnumber[0m=36 [32mhash[0m=f6670a..b6d2fe [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.228ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=268.00B [32mtriediffs[0m=1.48KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:31:08.041] Chain head was updated                   [32mnumber[0m=36 [32mhash[0m=f6670a..b6d2fe [32mroot[0m=3e4599..96624c [32melapsed[0m=23.414796ms
+[31mERROR[0m[04-29|18:31:08.041] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:31:09.599] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:31:19.986] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:31:29.999] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:31:32.015] Imported new potential chain segment     [32mnumber[0m=37 [32mhash[0m=12f229..af3807 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=2.080ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=268.00B [32mtriediffs[0m=1.48KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:31:32.019] Chain head was updated                   [32mnumber[0m=37 [32mhash[0m=12f229..af3807 [32mroot[0m=3e4599..96624c [32melapsed[0m=1.967239ms
+[31mERROR[0m[04-29|18:31:32.019] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:31:40.012] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:31:44.017] Imported new potential chain segment     [32mnumber[0m=38 [32mhash[0m=bdb62c..a510ca [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.403ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=268.00B [32mtriediffs[0m=1.48KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:31:44.017] Ready for fork activation                [32mfork[0m=Prague [32mdate[0m="21 Nov 86 01:46 CST" [32mremaining[0m=2292799h14m55s [32mtimestamp[0m=9,999,999,999
+[32mINFO [0m[04-29|18:31:44.020] Chain head was updated                   [32mnumber[0m=38 [32mhash[0m=bdb62c..a510ca [32mroot[0m=3e4599..96624c [32melapsed[0m=1.93871ms
+[31mERROR[0m[04-29|18:31:44.020] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:31:50.028] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:31:56.013] Imported new potential chain segment     [32mnumber[0m=39 [32mhash[0m=34d4ea..6ab1a3 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.112ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=268.00B [32mtriediffs[0m=1.48KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:31:56.017] Chain head was updated                   [32mnumber[0m=39 [32mhash[0m=34d4ea..6ab1a3 [32mroot[0m=3e4599..96624c [32melapsed[0m=1.580692ms
+[31mERROR[0m[04-29|18:31:56.017] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:32:00.041] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:32:08.017] Imported new potential chain segment     [32mnumber[0m=40 [32mhash[0m=0acd9f..21b81a [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.268ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=268.00B [32mtriediffs[0m=1.48KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:32:08.020] Chain head was updated                   [32mnumber[0m=40 [32mhash[0m=0acd9f..21b81a [32mroot[0m=3e4599..96624c [32melapsed[0m=2.06874ms
+[31mERROR[0m[04-29|18:32:08.020] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:32:10.056] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:32:16.001] Starting work on payload                 [32mid[0m=0x0369cef159737dfe
+[32mINFO [0m[04-29|18:32:16.002] Updated payload                          [32mid[0m=0x0369cef159737dfe [32mnumber[0m=41 [32mhash[0m=ec32cf..556bd4 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=3e4599..96624c [32melapsed[0m="61.26µs"
+[32mINFO [0m[04-29|18:32:20.007] Stopping work on payload                 [32mid[0m=0x0369cef159737dfe [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:32:20.014] Imported new potential chain segment     [32mnumber[0m=41 [32mhash[0m=ec32cf..556bd4 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.279ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=268.00B [32mtriediffs[0m=1.48KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:32:20.016] Chain head was updated                   [32mnumber[0m=41 [32mhash[0m=ec32cf..556bd4 [32mroot[0m=3e4599..96624c [32melapsed[0m=1.078464ms
+[31mERROR[0m[04-29|18:32:20.017] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:32:20.071] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:32:28.002] Starting work on payload                 [32mid[0m=0x0346663d6f9e0fc6
+[32mINFO [0m[04-29|18:32:28.003] Updated payload                          [32mid[0m=0x0346663d6f9e0fc6 [32mnumber[0m=42 [32mhash[0m=dc2683..1d5cdb [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=3e4599..96624c [32melapsed[0m="94.39µs"
+[32mINFO [0m[04-29|18:32:30.084] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:32:32.001] Stopping work on payload                 [32mid[0m=0x0346663d6f9e0fc6 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:32:32.010] Imported new potential chain segment     [32mnumber[0m=42 [32mhash[0m=dc2683..1d5cdb [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.468ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=268.00B [32mtriediffs[0m=1.48KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:32:32.012] Chain head was updated                   [32mnumber[0m=42 [32mhash[0m=dc2683..1d5cdb [32mroot[0m=3e4599..96624c [32melapsed[0m=1.070825ms
+[31mERROR[0m[04-29|18:32:32.012] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:32:40.095] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:32:50.108] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:32:56.016] Imported new potential chain segment     [32mnumber[0m=43 [32mhash[0m=bd279a..7f1561 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.196ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=268.00B [32mtriediffs[0m=1.48KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:32:56.019] Chain head was updated                   [32mnumber[0m=43 [32mhash[0m=bd279a..7f1561 [32mroot[0m=3e4599..96624c [32melapsed[0m=1.142984ms
+[31mERROR[0m[04-29|18:32:56.019] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:33:00.122] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:33:04.001] Starting work on payload                 [32mid[0m=0x0317328453ddfe63
+[32mINFO [0m[04-29|18:33:04.001] Updated payload                          [32mid[0m=0x0317328453ddfe63 [32mnumber[0m=44 [32mhash[0m=2efb49..1232c1 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=3e4599..96624c [32melapsed[0m="54.79µs"
+[32mINFO [0m[04-29|18:33:08.005] Stopping work on payload                 [32mid[0m=0x0317328453ddfe63 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:33:08.013] Imported new potential chain segment     [32mnumber[0m=44 [32mhash[0m=2efb49..1232c1 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.877ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=268.00B [32mtriediffs[0m=1.48KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:33:08.017] Chain head was updated                   [32mnumber[0m=44 [32mhash[0m=2efb49..1232c1 [32mroot[0m=3e4599..96624c [32melapsed[0m=2.044551ms
+[31mERROR[0m[04-29|18:33:08.017] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:33:10.134] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:33:20.146] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:33:30.159] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:33:32.017] Imported new potential chain segment     [32mnumber[0m=45 [32mhash[0m=454c9e..6d4e6d [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=2.090ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=268.00B [32mtriediffs[0m=1.48KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:33:32.020] Chain head was updated                   [32mnumber[0m=45 [32mhash[0m=454c9e..6d4e6d [32mroot[0m=3e4599..96624c [32melapsed[0m=2.087622ms
+[31mERROR[0m[04-29|18:33:32.020] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:33:36.688] Submitted transaction                    [32mhash[0m=0x00fb37074fb0977630b8b6641cd31b0976ef864ed639e00ad447519cc34c3cd1 [32mfrom[0m=0xe3884CF5d8fc59367A9702CA08295685E825D4f5 [32mnonce[0m=2 [32mrecipient[0m=0x54db8d1344208f57d60E0B87eA02bB6577Fbddda [32mvalue[0m=3,140,000,000,000,000,000
+[32mINFO [0m[04-29|18:33:40.170] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:33:44.017] Imported new potential chain segment     [32mnumber[0m=46 [32mhash[0m=120862..e9e37d [32mblocks[0m=1 [32mtxs[0m=1 [32mmgas[0m=0.021 [32melapsed[0m=1.776ms     [32mmgasps[0m=11.823 [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:33:44.020] Chain head was updated                   [32mnumber[0m=46 [32mhash[0m=120862..e9e37d [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.081806ms
+[31mERROR[0m[04-29|18:33:44.020] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:33:50.180] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:34:00.190] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:34:04.002] Starting work on payload                 [32mid[0m=0x03b526949a5b0477
+[32mINFO [0m[04-29|18:34:04.002] Updated payload                          [32mid[0m=0x03b526949a5b0477 [32mnumber[0m=47 [32mhash[0m=243a3f..6b5f26 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m="40.29µs"
+[32mINFO [0m[04-29|18:34:08.005] Stopping work on payload                 [32mid[0m=0x03b526949a5b0477 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:34:08.014] Imported new potential chain segment     [32mnumber[0m=47 [32mhash[0m=243a3f..6b5f26 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=2.066ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:34:08.017] Chain head was updated                   [32mnumber[0m=47 [32mhash[0m=243a3f..6b5f26 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.397704ms
+[31mERROR[0m[04-29|18:34:08.017] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:34:10.204] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:34:16.001] Starting work on payload                 [32mid[0m=0x03579dc8f755eaac
+[32mINFO [0m[04-29|18:34:16.001] Updated payload                          [32mid[0m=0x03579dc8f755eaac [32mnumber[0m=48 [32mhash[0m=b4e018..27c69e [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m="44.01µs"
+[32mINFO [0m[04-29|18:34:20.007] Stopping work on payload                 [32mid[0m=0x03579dc8f755eaac [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:34:20.015] Imported new potential chain segment     [32mnumber[0m=48 [32mhash[0m=b4e018..27c69e [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.385ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:34:20.017] Chain head was updated                   [32mnumber[0m=48 [32mhash[0m=b4e018..27c69e [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.092046ms
+[31mERROR[0m[04-29|18:34:20.017] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:34:20.218] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:34:28.002] Starting work on payload                 [32mid[0m=0x03b4879ebcc1fa5e
+[32mINFO [0m[04-29|18:34:28.002] Updated payload                          [32mid[0m=0x03b4879ebcc1fa5e [32mnumber[0m=49 [32mhash[0m=318618..86fad9 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m="37.029µs"
+[32mINFO [0m[04-29|18:34:30.231] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:34:32.004] Stopping work on payload                 [32mid[0m=0x03b4879ebcc1fa5e [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:34:32.011] Imported new potential chain segment     [32mnumber[0m=49 [32mhash[0m=318618..86fad9 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.365ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:34:32.014] Chain head was updated                   [32mnumber[0m=49 [32mhash[0m=318618..86fad9 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.163766ms
+[31mERROR[0m[04-29|18:34:32.014] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:34:40.244] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:34:50.257] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:34:52.002] Starting work on payload                 [32mid[0m=0x034218ef8428bec7
+[32mINFO [0m[04-29|18:34:52.002] Updated payload                          [32mid[0m=0x034218ef8428bec7 [32mnumber[0m=50 [32mhash[0m=ac4153..f65619 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m="37.729µs"
+[32mINFO [0m[04-29|18:34:56.008] Stopping work on payload                 [32mid[0m=0x034218ef8428bec7 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:34:56.015] Imported new potential chain segment     [32mnumber[0m=50 [32mhash[0m=ac4153..f65619 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.450ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:34:56.015] Ready for fork activation                [32mfork[0m=Prague [32mdate[0m="21 Nov 86 01:46 CST" [32mremaining[0m=2292799h11m43s [32mtimestamp[0m=9,999,999,999
+[32mINFO [0m[04-29|18:34:56.018] Chain head was updated                   [32mnumber[0m=50 [32mhash[0m=ac4153..f65619 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.158346ms
+[31mERROR[0m[04-29|18:34:56.018] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:35:00.267] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:35:10.282] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:35:20.018] Imported new potential chain segment     [32mnumber[0m=51 [32mhash[0m=1fab28..c4e116 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=4.740ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:35:20.022] Chain head was updated                   [32mnumber[0m=51 [32mhash[0m=1fab28..c4e116 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=2.052013ms
+[31mERROR[0m[04-29|18:35:20.022] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:35:20.294] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:35:30.307] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:35:32.018] Imported new potential chain segment     [32mnumber[0m=52 [32mhash[0m=a4707a..3c7173 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=2.887ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:35:32.021] Chain head was updated                   [32mnumber[0m=52 [32mhash[0m=a4707a..3c7173 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.500525ms
+[31mERROR[0m[04-29|18:35:32.021] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:35:40.001] Starting work on payload                 [32mid[0m=0x032fbcab7f31df0e
+[32mINFO [0m[04-29|18:35:40.002] Updated payload                          [32mid[0m=0x032fbcab7f31df0e [32mnumber[0m=53 [32mhash[0m=316910..623be1 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m="55.209µs"
+[32mINFO [0m[04-29|18:35:40.318] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:35:44.005] Stopping work on payload                 [32mid[0m=0x032fbcab7f31df0e [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:35:44.012] Imported new potential chain segment     [32mnumber[0m=53 [32mhash[0m=316910..623be1 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.410ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:35:44.015] Chain head was updated                   [32mnumber[0m=53 [32mhash[0m=316910..623be1 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.049887ms
+[31mERROR[0m[04-29|18:35:44.015] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:35:50.334] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:35:52.001] Starting work on payload                 [32mid[0m=0x035783e68f1629c1
+[32mINFO [0m[04-29|18:35:52.001] Updated payload                          [32mid[0m=0x035783e68f1629c1 [32mnumber[0m=54 [32mhash[0m=b00c38..2b6011 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m="28.189µs"
+[32mINFO [0m[04-29|18:35:56.007] Stopping work on payload                 [32mid[0m=0x035783e68f1629c1 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:35:56.015] Imported new potential chain segment     [32mnumber[0m=54 [32mhash[0m=b00c38..2b6011 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=2.048ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:35:56.018] Chain head was updated                   [32mnumber[0m=54 [32mhash[0m=b00c38..2b6011 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.590635ms
+[31mERROR[0m[04-29|18:35:56.018] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:36:00.349] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:36:08.018] Imported new potential chain segment     [32mnumber[0m=55 [32mhash[0m=eeba03..eee6c6 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=3.376ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:36:08.020] Chain head was updated                   [32mnumber[0m=55 [32mhash[0m=eeba03..eee6c6 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.614156ms
+[31mERROR[0m[04-29|18:36:08.020] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:36:10.363] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:36:20.375] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:36:30.387] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:36:40.400] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:36:50.414] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:36:56.013] Imported new potential chain segment     [32mnumber[0m=56 [32mhash[0m=5473c9..22dfc1 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.176ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:36:56.015] Chain head was updated                   [32mnumber[0m=56 [32mhash[0m=5473c9..22dfc1 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.137887ms
+[31mERROR[0m[04-29|18:36:56.015] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:37:00.428] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:37:04.002] Starting work on payload                 [32mid[0m=0x0329938f54a1e330
+[32mINFO [0m[04-29|18:37:04.002] Updated payload                          [32mid[0m=0x0329938f54a1e330 [32mnumber[0m=57 [32mhash[0m=6cdd0f..c8bd8b [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m="47.39µs"
+[32mINFO [0m[04-29|18:37:08.006] Stopping work on payload                 [32mid[0m=0x0329938f54a1e330 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:37:08.012] Imported new potential chain segment     [32mnumber[0m=57 [32mhash[0m=6cdd0f..c8bd8b [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.393ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:37:08.015] Chain head was updated                   [32mnumber[0m=57 [32mhash[0m=6cdd0f..c8bd8b [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.056567ms
+[31mERROR[0m[04-29|18:37:08.015] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:37:10.443] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:37:20.455] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:37:28.002] Starting work on payload                 [32mid[0m=0x03d9d4f762554d7e
+[32mINFO [0m[04-29|18:37:28.002] Updated payload                          [32mid[0m=0x03d9d4f762554d7e [32mnumber[0m=58 [32mhash[0m=01f891..49f147 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m="29.89µs"
+[32mINFO [0m[04-29|18:37:30.468] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:37:32.005] Stopping work on payload                 [32mid[0m=0x03d9d4f762554d7e [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:37:32.013] Imported new potential chain segment     [32mnumber[0m=58 [32mhash[0m=01f891..49f147 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.508ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:37:32.016] Chain head was updated                   [32mnumber[0m=58 [32mhash[0m=01f891..49f147 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.143047ms
+[31mERROR[0m[04-29|18:37:32.016] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:37:40.002] Starting work on payload                 [32mid[0m=0x03d05dabf84a222e
+[32mINFO [0m[04-29|18:37:40.002] Updated payload                          [32mid[0m=0x03d05dabf84a222e [32mnumber[0m=59 [32mhash[0m=e6a861..f66483 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m="45.78µs"
+[32mINFO [0m[04-29|18:37:40.480] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:37:44.006] Stopping work on payload                 [32mid[0m=0x03d05dabf84a222e [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:37:44.013] Imported new potential chain segment     [32mnumber[0m=59 [32mhash[0m=e6a861..f66483 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.379ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:37:44.017] Chain head was updated                   [32mnumber[0m=59 [32mhash[0m=e6a861..f66483 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=2.024226ms
+[31mERROR[0m[04-29|18:37:44.017] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:37:50.494] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:37:56.015] Imported new potential chain segment     [32mnumber[0m=60 [32mhash[0m=81c15b..714771 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.167ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:37:56.019] Chain head was updated                   [32mnumber[0m=60 [32mhash[0m=81c15b..714771 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.942966ms
+[31mERROR[0m[04-29|18:37:56.019] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:38:00.504] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:38:08.015] Imported new potential chain segment     [32mnumber[0m=61 [32mhash[0m=431507..912a0a [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.148ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:38:08.016] Ready for fork activation                [32mfork[0m=Prague [32mdate[0m="21 Nov 86 01:46 CST" [32mremaining[0m=2292799h8m31s  [32mtimestamp[0m=9,999,999,999
+[32mINFO [0m[04-29|18:38:08.018] Chain head was updated                   [32mnumber[0m=61 [32mhash[0m=431507..912a0a [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.096307ms
+[31mERROR[0m[04-29|18:38:08.018] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:38:10.516] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:38:20.015] Imported new potential chain segment     [32mnumber[0m=62 [32mhash[0m=4eee1c..e25191 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.162ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:38:20.018] Chain head was updated                   [32mnumber[0m=62 [32mhash[0m=4eee1c..e25191 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.416737ms
+[31mERROR[0m[04-29|18:38:20.018] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:38:20.527] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:38:30.540] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:38:40.554] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:38:50.564] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:38:52.002] Starting work on payload                 [32mid[0m=0x03f9fe1e1973bf8b
+[32mINFO [0m[04-29|18:38:52.002] Updated payload                          [32mid[0m=0x03f9fe1e1973bf8b [32mnumber[0m=63 [32mhash[0m=f9c8f0..ae66a2 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m="45.07µs"
+[32mINFO [0m[04-29|18:38:56.005] Stopping work on payload                 [32mid[0m=0x03f9fe1e1973bf8b [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:38:56.012] Imported new potential chain segment     [32mnumber[0m=63 [32mhash[0m=f9c8f0..ae66a2 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.402ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:38:56.016] Chain head was updated                   [32mnumber[0m=63 [32mhash[0m=f9c8f0..ae66a2 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=2.131576ms
+[31mERROR[0m[04-29|18:38:56.016] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:39:00.578] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:39:08.014] Imported new potential chain segment     [32mnumber[0m=64 [32mhash[0m=86cfd6..f81557 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.120ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:39:08.018] Chain head was updated                   [32mnumber[0m=64 [32mhash[0m=86cfd6..f81557 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.768707ms
+[31mERROR[0m[04-29|18:39:08.018] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:39:10.592] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:39:20.604] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:39:30.614] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:39:40.001] Starting work on payload                 [32mid[0m=0x03289ae1b4e819b2
+[32mINFO [0m[04-29|18:39:40.001] Updated payload                          [32mid[0m=0x03289ae1b4e819b2 [32mnumber[0m=65 [32mhash[0m=0e6381..9b889e [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m="39.09µs"
+[32mINFO [0m[04-29|18:39:40.826] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:39:44.005] Stopping work on payload                 [32mid[0m=0x03289ae1b4e819b2 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:39:44.013] Imported new potential chain segment     [32mnumber[0m=65 [32mhash[0m=0e6381..9b889e [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.247ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:39:44.016] Chain head was updated                   [32mnumber[0m=65 [32mhash[0m=0e6381..9b889e [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.080168ms
+[31mERROR[0m[04-29|18:39:44.016] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:39:51.139] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:39:52.001] Starting work on payload                 [32mid[0m=0x0399069b3534dbd8
+[32mINFO [0m[04-29|18:39:52.001] Updated payload                          [32mid[0m=0x0399069b3534dbd8 [32mnumber[0m=66 [32mhash[0m=0cb7aa..790d45 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m="32.5µs"
+[32mINFO [0m[04-29|18:39:56.008] Stopping work on payload                 [32mid[0m=0x0399069b3534dbd8 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:39:56.015] Imported new potential chain segment     [32mnumber[0m=66 [32mhash[0m=0cb7aa..790d45 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=2.192ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:39:56.018] Chain head was updated                   [32mnumber[0m=66 [32mhash[0m=0cb7aa..790d45 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.457168ms
+[31mERROR[0m[04-29|18:39:56.018] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:40:01.354] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:40:04.001] Starting work on payload                 [32mid[0m=0x03030c7c87c9063a
+[32mINFO [0m[04-29|18:40:04.001] Updated payload                          [32mid[0m=0x03030c7c87c9063a [32mnumber[0m=67 [32mhash[0m=2f3e32..5d170f [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m="45.96µs"
+[32mINFO [0m[04-29|18:40:08.005] Stopping work on payload                 [32mid[0m=0x03030c7c87c9063a [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:40:08.012] Imported new potential chain segment     [32mnumber[0m=67 [32mhash[0m=2f3e32..5d170f [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.492ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:40:08.014] Chain head was updated                   [32mnumber[0m=67 [32mhash[0m=2f3e32..5d170f [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.196898ms
+[31mERROR[0m[04-29|18:40:08.014] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:40:11.664] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:40:16.001] Starting work on payload                 [32mid[0m=0x03571b682f32c828
+[32mINFO [0m[04-29|18:40:16.001] Updated payload                          [32mid[0m=0x03571b682f32c828 [32mnumber[0m=68 [32mhash[0m=455a50..cd4e16 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m="30.96µs"
+[32mINFO [0m[04-29|18:40:20.007] Stopping work on payload                 [32mid[0m=0x03571b682f32c828 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:40:20.014] Imported new potential chain segment     [32mnumber[0m=68 [32mhash[0m=455a50..cd4e16 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.307ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:40:20.018] Chain head was updated                   [32mnumber[0m=68 [32mhash[0m=455a50..cd4e16 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=2.412866ms
+[31mERROR[0m[04-29|18:40:20.018] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:40:21.976] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:40:32.015] Imported new potential chain segment     [32mnumber[0m=69 [32mhash[0m=e3acd7..a439df [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.299ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:40:32.018] Chain head was updated                   [32mnumber[0m=69 [32mhash[0m=e3acd7..a439df [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.347298ms
+[31mERROR[0m[04-29|18:40:32.019] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:40:32.287] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:40:40.001] Starting work on payload                 [32mid[0m=0x03a7549fe871c657
+[32mINFO [0m[04-29|18:40:40.002] Updated payload                          [32mid[0m=0x03a7549fe871c657 [32mnumber[0m=70 [32mhash[0m=968ed2..4a499f [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m="39.83µs"
+[32mINFO [0m[04-29|18:40:42.599] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:40:44.005] Stopping work on payload                 [32mid[0m=0x03a7549fe871c657 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:40:44.012] Imported new potential chain segment     [32mnumber[0m=70 [32mhash[0m=968ed2..4a499f [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.646ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:40:44.015] Chain head was updated                   [32mnumber[0m=70 [32mhash[0m=968ed2..4a499f [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.547478ms
+[31mERROR[0m[04-29|18:40:44.015] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:40:53.210] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:41:03.319] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:41:04.002] Starting work on payload                 [32mid[0m=0x03cead293fc51e33
+[32mINFO [0m[04-29|18:41:04.002] Updated payload                          [32mid[0m=0x03cead293fc51e33 [32mnumber[0m=71 [32mhash[0m=76c077..135d03 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m="43.55µs"
+[32mINFO [0m[04-29|18:41:08.005] Stopping work on payload                 [32mid[0m=0x03cead293fc51e33 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:41:08.012] Imported new potential chain segment     [32mnumber[0m=71 [32mhash[0m=76c077..135d03 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.319ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:41:08.015] Chain head was updated                   [32mnumber[0m=71 [32mhash[0m=76c077..135d03 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.933377ms
+[31mERROR[0m[04-29|18:41:08.015] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:41:13.629] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:41:16.001] Starting work on payload                 [32mid[0m=0x0372862241158eee
+[32mINFO [0m[04-29|18:41:16.001] Updated payload                          [32mid[0m=0x0372862241158eee [32mnumber[0m=72 [32mhash[0m=56393f..a974c3 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m="38.64µs"
+[32mINFO [0m[04-29|18:41:20.007] Stopping work on payload                 [32mid[0m=0x0372862241158eee [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:41:20.014] Imported new potential chain segment     [32mnumber[0m=72 [32mhash[0m=56393f..a974c3 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.575ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:41:20.014] Ready for fork activation                [32mfork[0m=Prague [32mdate[0m="21 Nov 86 01:46 CST" [32mremaining[0m=2292799h5m19s  [32mtimestamp[0m=9,999,999,999
+[32mINFO [0m[04-29|18:41:20.018] Chain head was updated                   [32mnumber[0m=72 [32mhash[0m=56393f..a974c3 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.769317ms
+[31mERROR[0m[04-29|18:41:20.018] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:41:24.040] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:41:28.001] Starting work on payload                 [32mid[0m=0x0345d25e1e8ac20a
+[32mINFO [0m[04-29|18:41:28.001] Updated payload                          [32mid[0m=0x0345d25e1e8ac20a [32mnumber[0m=73 [32mhash[0m=f2352b..054b06 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m="32.27µs"
+[32mINFO [0m[04-29|18:41:32.004] Stopping work on payload                 [32mid[0m=0x0345d25e1e8ac20a [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:41:32.011] Imported new potential chain segment     [32mnumber[0m=73 [32mhash[0m=f2352b..054b06 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.473ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:41:32.015] Chain head was updated                   [32mnumber[0m=73 [32mhash[0m=f2352b..054b06 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.998958ms
+[31mERROR[0m[04-29|18:41:32.015] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:41:34.151] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:41:44.019] Imported new potential chain segment     [32mnumber[0m=74 [32mhash[0m=b182ba..6f378a [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.238ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:41:44.022] Chain head was updated                   [32mnumber[0m=74 [32mhash[0m=b182ba..6f378a [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=2.074557ms
+[31mERROR[0m[04-29|18:41:44.022] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:41:44.461] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:41:54.673] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:41:56.015] Imported new potential chain segment     [32mnumber[0m=75 [32mhash[0m=0c3eaf..fc955c [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.430ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:41:56.018] Chain head was updated                   [32mnumber[0m=75 [32mhash[0m=0c3eaf..fc955c [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.838508ms
+[31mERROR[0m[04-29|18:41:56.018] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:42:04.686] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:42:14.996] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:42:16.001] Starting work on payload                 [32mid[0m=0x03bb138d6c70bc89
+[32mINFO [0m[04-29|18:42:16.001] Updated payload                          [32mid[0m=0x03bb138d6c70bc89 [32mnumber[0m=76 [32mhash[0m=8da801..99e886 [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m="44.75µs"
+[32mINFO [0m[04-29|18:42:20.007] Stopping work on payload                 [32mid[0m=0x03bb138d6c70bc89 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:42:20.015] Imported new potential chain segment     [32mnumber[0m=76 [32mhash[0m=8da801..99e886 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.361ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:42:20.018] Chain head was updated                   [32mnumber[0m=76 [32mhash[0m=8da801..99e886 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.057098ms
+[31mERROR[0m[04-29|18:42:20.018] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:42:25.409] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:42:35.421] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:42:44.017] Imported new potential chain segment     [32mnumber[0m=77 [32mhash[0m=f50353..aaa27a [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=2.979ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:42:44.021] Chain head was updated                   [32mnumber[0m=77 [32mhash[0m=f50353..aaa27a [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=2.433848ms
+[31mERROR[0m[04-29|18:42:44.021] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:42:45.533] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:42:55.849] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:43:04.002] Starting work on payload                 [32mid[0m=0x0385855caf7171a6
+[32mINFO [0m[04-29|18:43:04.002] Updated payload                          [32mid[0m=0x0385855caf7171a6 [32mnumber[0m=78 [32mhash[0m=45fc14..f4e26e [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m="66.02µs"
+[32mINFO [0m[04-29|18:43:06.063] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:43:08.007] Stopping work on payload                 [32mid[0m=0x0385855caf7171a6 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:43:08.014] Imported new potential chain segment     [32mnumber[0m=78 [32mhash[0m=45fc14..f4e26e [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.190ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:43:08.016] Chain head was updated                   [32mnumber[0m=78 [32mhash[0m=45fc14..f4e26e [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.097329ms
+[31mERROR[0m[04-29|18:43:08.016] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:43:16.576] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:43:20.014] Imported new potential chain segment     [32mnumber[0m=79 [32mhash[0m=8a61bc..355791 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.220ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:43:20.017] Chain head was updated                   [32mnumber[0m=79 [32mhash[0m=8a61bc..355791 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.242409ms
+[31mERROR[0m[04-29|18:43:20.017] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:43:26.991] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:43:32.018] Imported new potential chain segment     [32mnumber[0m=80 [32mhash[0m=251099..f630a9 [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.988ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:43:32.020] Chain head was updated                   [32mnumber[0m=80 [32mhash[0m=251099..f630a9 [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.156349ms
+[31mERROR[0m[04-29|18:43:32.021] Nil finalized block cannot evict old blobs
+[32mINFO [0m[04-29|18:43:37.104] Looking for peers                        [32mpeercount[0m=1 [32mtried[0m=0 [32mstatic[0m=0
+[32mINFO [0m[04-29|18:43:40.002] Starting work on payload                 [32mid[0m=0x034312e5ea72edc5
+[32mINFO [0m[04-29|18:43:40.002] Updated payload                          [32mid[0m=0x034312e5ea72edc5 [32mnumber[0m=81 [32mhash[0m=1669cd..c1c93b [32mtxs[0m=0 [32mwithdrawals[0m=0 [32mgas[0m=0     [32mfees[0m=0       [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m="38.89µs"
+[32mINFO [0m[04-29|18:43:44.006] Stopping work on payload                 [32mid[0m=0x034312e5ea72edc5 [32mreason[0m=delivery
+[32mINFO [0m[04-29|18:43:44.015] Imported new potential chain segment     [32mnumber[0m=81 [32mhash[0m=1669cd..c1c93b [32mblocks[0m=1 [32mtxs[0m=0 [32mmgas[0m=0.000 [32melapsed[0m=1.512ms     [32mmgasps[0m=0.000  [32msnapdiffs[0m=402.00B [32mtriediffs[0m=2.22KiB [32mtriedirty[0m=0.00B
+[32mINFO [0m[04-29|18:43:44.027] Chain head was updated                   [32mnumber[0m=81 [32mhash[0m=1669cd..c1c93b [32mroot[0m=58cdf2..3a8ab9 [32melapsed[0m=1.18802ms
+[32mINFO [0m[04-29|18:43:46.656] Got interrupt, shutting down...
+[32mINFO [0m[04-29|18:43:46.656] HTTP server stopped                      [32mendpoint[0m=127.0.0.1:8546
+[32mINFO [0m[04-29|18:43:46.656] HTTP server stopped                      [32mendpoint[0m=127.0.0.1:8552
+[32mINFO [0m[04-29|18:43:46.656] IPC endpoint closed                      [32murl[0m=/home/marmot/Projects/dragon/execution/data/second/geth.ipc
+[32mINFO [0m[04-29|18:43:47.315] Ethereum protocol stopped
+[32mINFO [0m[04-29|18:43:47.315] Transaction pool stopped
+[32mINFO [0m[04-29|18:43:47.318] Persisting dirty state to disk           [32mhead[0m=46 [32mroot[0m=58cdf2..3a8ab9 [32mlayers[0m=3
+[32mINFO [0m[04-29|18:43:47.320] Persisted dirty state to disk            [32msize[0m=2.54KiB [32melapsed[0m=1.139ms
+[32mINFO [0m[04-29|18:43:47.325] Blockchain stopped

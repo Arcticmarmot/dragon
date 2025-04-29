@@ -14,6 +14,11 @@
             "date": 1745826559218,
             "name": "consensus/data/bootnode/bootnode-2025-04-28.log",
             "hash": "563082169c982239c255800799d698046e7909071d318c8a7af136fd661dd566"
+        },
+        {
+            "date": 1745856001376,
+            "name": "consensus/data/bootnode/bootnode-2025-04-29.log",
+            "hash": "0863b96ca179321a729ea28397c5b6f854a60f025f44a607116d5423681363f5"
         }
     ],
     "hashType": "sha256"
